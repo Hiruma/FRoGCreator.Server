@@ -28,7 +28,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>C:\bin\Debug\</OutputPath>
     <CodeAnalysisRuleSet>NLog.netfx40.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile />
   </PropertyGroup>
