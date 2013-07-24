@@ -1,0 +1,3 @@
+[submodule "libs/FRoGCreator.Protocol"]
+	path = libs/FRoGCreator.Protocol
+	url = https://github.com/FRoGCreator/FRoGCreator.Server.git
