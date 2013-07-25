@@ -6,13 +6,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
-using FRoGCreator.Server.Console.Authentication.Classes.Functions;
+using Classes.Functions; // Mauvais path
 
 namespace FRoGCreator.Server.Console.Authentication
 {
     class Program
     {
         private static ManualResetEvent _Valider = new ManualResetEvent(false);
+        
         static void Main(string[] args)
         {
             try
