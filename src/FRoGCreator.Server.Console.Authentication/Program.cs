@@ -10,6 +10,7 @@ namespace FRoGCreator.Server.Console.Authentication
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
