@@ -22,7 +22,7 @@ namespace Classes // Mauvais namespace
                     Console.Write("  VALIDE    ");
                     break;
                 case 2:
-                Console.ForegroundColor = WaitColor;
+                    Console.ForegroundColor = WaitColor;
                     Console.Write("  ATTENTE   ");
                     break;
                 case 3:
