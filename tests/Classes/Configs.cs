@@ -9,12 +9,11 @@ namespace AuthServer.Classes
 {
     class Configs
     {    
-        static string TITLE = "Server Caption";
-        static int PORT = 5555,
-             WAITLENGHT = 99;
-        static IPAddress IPALLOWED = IPAddress.Any;
+        public static string TITLE = "Server Caption";
+        public static int PORT = 5555, WAITLENGHT = 99;
+        public static IPAddress IPALLOWED = IPAddress.Any;
         
-        Public static void Initialize()
+        public static void Initialize()
         {
             Console.Title = TITLE;
         }
