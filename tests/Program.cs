@@ -2,19 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-/*using System.Threading;*/
+using System.Threading;
 using System.Threading.Tasks;
-/*using System.Net;
-using System.Net.Sockets;*/
+using System.Net;
+using System.Net.Sockets;
 
 namespace FRoGCreator.Server.Console.Authentication
 {
     class Program
     {
-        // private static ManualResetEvent _Valider = new ManualResetEvent(false);
+        private static ManualResetEvent _Valider = new ManualResetEvent(false);
         static void Main(string[] args)
         {
-            /*try
+            try
             {
                 Socket Listener = new Socket(
                     AddressFamily.InterNetwork,
@@ -32,11 +32,11 @@ namespace FRoGCreator.Server.Console.Authentication
             }
             catch(Exception ex)
             {
-                return; // Display Error
-            }*/
+                return;
+            }
         }
         
-        /*public static void AsyncAccept(IAsyncResult Result_)
+        public static void AsyncAccept(IAsyncResult Result_)
         {
             try
             {
@@ -50,6 +50,6 @@ namespace FRoGCreator.Server.Console.Authentication
             {
                 return; // Display Error
             }
-        }*/
+        }
     }
 }
