@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
+using FRoGCreator.Server.Console.Authentication.Classes.Functions;
 
 namespace FRoGCreator.Server.Console.Authentication
 {
