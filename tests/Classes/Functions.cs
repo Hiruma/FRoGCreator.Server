@@ -10,7 +10,7 @@ namespace Classes // Mauvais namespace
 {
     public class Functions
     {
-        public void ConsoleWriter(uint MessageLevel_, string Message_, ConsoleColor MessageColor_)
+        public void ConsoleWriter(uint MessageLevel_, string Message_)
         {
             switch (MessageLevel_)
             {
@@ -35,9 +35,8 @@ namespace Classes // Mauvais namespace
                     break;
             }
             
-            Console.ForegroundColor = MessageColor_;
-            Console.Write(Message_ + "\n");
             Console.ResetColor();
+            Console.Write(Message_ + "\n");
         }
     }
 }
