@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 
-namespace AuthServer.Classes
+namespace Classes // Mauvais namespace
 {
     class Configs
     {    
