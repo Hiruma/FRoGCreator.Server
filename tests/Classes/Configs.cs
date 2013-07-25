@@ -9,9 +9,9 @@ namespace Classes // Mauvais namespace
 {
     class Configs
     {    
-        public string TITLE = "Server Caption";
-        public int PORT = 5555, WAITLENGHT = 99;
-        public IPAddress IPALLOWED = IPAddress.Any;
+        public static string TITLE = "Server Caption";
+        public static int PORT = 5555, WAITLENGHT = 99;
+        public static IPAddress IPALLOWED = IPAddress.Any;
         public ConsoleColor DoneColor   = ConsoleColor.Green,
                             WaitColor   = ConsoleColor.Yellow,
                             ErrorColor  = ConsoleColor.Red,
