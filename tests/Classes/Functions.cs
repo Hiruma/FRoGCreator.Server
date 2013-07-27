@@ -1,3 +1,5 @@
+/* EN ÉTUDE DE LA LIBRAIRIE NLOG*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
