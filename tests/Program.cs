@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
 using NLog;
-using Classes.Functions; // Mauvais path
 
 /*Accès libre sans test et cryptage*/
 
