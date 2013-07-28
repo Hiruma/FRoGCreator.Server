@@ -30,7 +30,7 @@ namespace FRoGCreator.Server.Console.Authentication
                 Listener.Listen(Configs.WAITLENGHT);
                 
                 // Un peu de renseignements pour l'utilisateur
-                _Log.Info("Lecture des demandes clientes sur le port " + Configs.PORT.ToString());
+                _Log.Info("Lecture des demandes clientes sur le port {0}", Configs.PORT.ToString());
                 
                 while(true)
                 {
