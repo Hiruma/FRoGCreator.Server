@@ -55,7 +55,7 @@ namespace FRoGCreator.Server.Console.Authentication
                 //       ...         
                 
                 // Un peu de renseignements pour l'utilisateur
-                _Log.Trace("Nouveau client accepté depuis " + Client.RemoteEndPoint.ToString());
+                _Log.Trace("Nouveau client accepté depuis {0}", Client.RemoteEndPoint.ToString());
             }
             catch (Exception ex)
             {
