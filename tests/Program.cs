@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
+using NLog;
 using Classes.Functions; // Mauvais path
 
 /*Accès libre sans test et cryptage*/
@@ -15,6 +16,7 @@ namespace FRoGCreator.Server.Console.Authentication
     class Program
     {
         private static ManualResetEvent _Valider = new ManualResetEvent(false);
+        private static Logger _Log = LogManager.GetCurrentClassLogger();
         
         static void Main(string[] args)
         {
@@ -28,7 +30,7 @@ namespace FRoGCreator.Server.Console.Authentication
                 Listener.Listen(Configs.WAITLENGHT);
                 
                 // Un peu de renseignements pour l'utilisateur
-                ConsoleWriter(2, "Lecture des demandes clientes sur le port " + Configs.PORT.ToString());
+                _Log.Info("Lecture des demandes clientes sur le port " + Configs.PORT.ToString());
                 
                 while(true)
                 {
@@ -39,7 +41,7 @@ namespace FRoGCreator.Server.Console.Authentication
             }
             catch(Exception ex)
             {
-                ConsoleWriter(3, ex.Message);
+                _Log.Error(ex.Message);
             }
         }
         
@@ -53,11 +55,11 @@ namespace FRoGCreator.Server.Console.Authentication
                 //       ...         
                 
                 // Un peu de renseignements pour l'utilisateur
-                ConsoleWriter(1, "Nouveau client accepté depuis " + Client.RemoteEndPoint.ToString());
+                _Log.Trace("Nouveau client accepté depuis " + Client.RemoteEndPoint.ToString());
             }
             catch (Exception ex)
             {
-                ConsoleWriter(3, ex.Message);
+                _Log.Error(ex.Message);
             }
         }
     }
