@@ -30,6 +30,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\libs\nhibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\libs\log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\libs\nhibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\libs\protobuf\protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -37,15 +49,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TinyIoC">
+      <HintPath>..\..\libs\tinyioc\TinyIoC.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Loader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\libs\TinyIoC\TinyIoC.csproj">
-      <Project>{72ff4023-dedf-40d2-8e54-1bb3e9c38c5c}</Project>
-      <Name>TinyIoC</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FRoGCreator.Server.Util\FRoGCreator.Server.Util.csproj">
       <Project>{e02d21e4-16ef-446c-a8df-42918f33e003}</Project>
       <Name>FRoGCreator.Server.Util</Name>

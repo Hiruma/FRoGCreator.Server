@@ -47,6 +47,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FRoGCreator.Server.Core\FRoGCreator.Server.Core.csproj">
+      <Project>{2c843500-50a9-4c7b-ba8c-b908ff0bafb7}</Project>
+      <Name>FRoGCreator.Server.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FRoGCreator.Server.Servers.Authentication\FRoGCreator.Server.Servers.Authentication.csproj">
+      <Project>{319e6d5d-4542-4598-a0ce-c0aa5935da68}</Project>
+      <Name>FRoGCreator.Server.Servers.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FRoGCreator.Server.Util\FRoGCreator.Server.Util.csproj">
+      <Project>{e02d21e4-16ef-446c-a8df-42918f33e003}</Project>
+      <Name>FRoGCreator.Server.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

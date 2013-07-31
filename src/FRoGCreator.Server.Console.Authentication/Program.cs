@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FRoGCreator.Server.Core;
 
 namespace FRoGCreator.Server.Console.Authentication
 {
@@ -10,7 +11,8 @@ namespace FRoGCreator.Server.Console.Authentication
     {
         static void Main(string[] args)
         {
-            
+            Loader.InitializeServer();
+            System.Console.ReadLine();
         }
     }
 }
