@@ -12,26 +12,26 @@ namespace FRoGCreator.Server.Core
 {
     public static class Loader
     {
-        private static ILog _logger;
+        private static readonly ILog Logger = LogManager.GetLogger(typeof (Loader));
 
         public static void InitializeServer()
         {
-            Console.WriteLine("Initialisation du serveur ...");
-            InitLogger();
+            Console.WriteLine("Initialisation du serveur ...\n");
             InitConfig();
-            Console.WriteLine("Initialisation terminée");
-        }
-
-        static void InitLogger()
-        {
-            log4net.Config.BasicConfigurator.Configure();
-            _logger = LogManager.GetLogger("MainLogger");
-            TinyIoCContainer.Current.Register(_logger);
         }
 
         static void InitConfig()
         {
-            _logger.Info("Config: OK");
+            try
+            {
+                //TODO: Load server's config
+                Logger.Info("CONFIG OK");
+            } 
+            catch (Exception e) 
+            {
+                Logger.Fatal(e);
+            }
+
         }
     }
 }
