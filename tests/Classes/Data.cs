@@ -73,9 +73,8 @@ namespace FRoGCreator.Server.Core.Classes
 
         public void AccountCreate(string IP, string Name, string Password)
         {
-            string _hPass = HashPassword(Password);
             string Command = "INSERT INTO Accounts (IP, Account, Password) VALUES" +
-            "('" + IP + "','" + Name + "','" + _hPass + "')";
+            "('" + IP + "','" + Name + "','" + Password + "')";
             int result = new SQLiteCommand(Command, SQL).ExecuteNonQuery();
 
             if (result > 0)
